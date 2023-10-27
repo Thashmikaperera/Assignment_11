@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 07</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+</head>
+<body>
+
+<header  id="header">
+    <div id="div1"></div>
+    <img src="assets/img/logo.png" alt="logo">
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="home_nav">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="customer_nav">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="item_nav">Item</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="order_nav">Order</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="order_details_nav">Order Details</a>
+            </li>
+        </ul>
+        <ul id="ol1" class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
+        <hr>
+    </nav>
+</header>
+
+<main id="loading_page">
+    <section>
+        <img id="img" src="assets/img/logo.png" alt="logo">
+    </section>
+    <button id="btn">Welcome to Home Page</button>
+    <section id="animation">
+        <ul  class="loading-animation" hidden>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <ul class="loading-animation alternate">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+
+</main>
+
+<section id="homePage">
+    <h1>WELCOME TO POS SYSTEM</h1>
+
+    <div id="homeDiv"></div>
+    <div id="homeDiv1"></div>
+    <div id="homeDiv2"></div>
+    <div id="homeDiv3"></div>
+    <div id="homeDiv4"></div>
+    <div id="homeDiv5"></div>
+    <div id="homeDiv6"></div>
+
+    <h2 id="customer_link">Customer</h2>
+    <h2 id="item_link">Item</h2>
+    <h2 id="order_link">Order</h2>
+    <h3 id="count1">32</h3>
+    <h3 id="count2">32</h3>
+    <h3 id="count3">32</h3>
+</section>
+
+<section id="customer">
+    <div id="divCustomer"></div>
+    <h3 id="customers">Customers</h3>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="imgCus" src="assets/img/icons8-customers-96.png" alt="Bootstrap" width="20" height="24">
+            </a>
+        </div>
+    </nav>
+
+    <div id="cusSearch"></div>
+    <div id="cu1" class="input-group flex-nowrap">
+        <span class="span">Customer ID :-</span>
+        <input id="cuS1" type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="cu2" class="input-group flex-nowrap">
+        <span class="span">Customer Name :-</span><br>
+        <input id="cuS2" type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="cu3" class="input-group flex-nowrap">
+        <span class="span">Contact :-</span><br>
+        <input id="cuS3" type="text" class="form-control" placeholder="xx xxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="cu4" class="input-group flex-nowrap">
+        <span class="span">Address :-</span><br>
+        <input id="cuS4" type="text" class="form-control" placeholder="Panadura" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+    <button id="UpdateBtn" type="button" class="btn btn-primary">Update</button>
+    <button id="saveBtn" type="button" class="btn btn-info">Save</button>
+    <button id="resetBtn" type="button" class="btn btn-info">Reset</button>
+
+
+    <table id="table" class="table">
+        <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Contact</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <tr>
+            <th scope="row">1</th>
+            <td>c001</td>
+            <td>Thashi</td>
+            <td>Panadura</td>
+            <td>0757206813</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>c002</td>
+            <td>madushani</td>
+            <td>Galle</td>
+            <td>0754677808</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>c003</td>
+            <td>Dananja</td>
+            <td>Haputhale</td>
+            <td>0705253486</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="item">
+    <div id="divItem"></div>
+    <h3 id="items">Items</h3>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="imgItem" src="assets/img/icons8-item-90.png" alt="Bootstrap" width="20" height="24">
+            </a>
+        </div>
+    </nav>
+    <div id="itemSearch"></div>
+    <div id="it1" class="input-group flex-nowrap">
+        <span class="span">Item Code :-</span><br>
+        <input id="itS1" type="text" class="form-control" placeholder="i001" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="it2" class="input-group flex-nowrap">
+        <span class="span">Description :-</span><br>
+        <input id="itS2" type="text" class="form-control" placeholder="Pen" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="it3" class="input-group flex-nowrap">
+        <span class="span">Price :-</span><br>
+        <input id="itS3" type="text" class="form-control" placeholder="20.00" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="it4" class="input-group flex-nowrap">
+        <span class="span">Qty :-</span><br>
+        <input id="itS4" type="text" class="form-control" placeholder="12" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <button id="item_deleteBtn" type="button" class="btn btn-danger">Delete</button>
+    <button id="item_UpdateBtn" type="button" class="btn btn-primary">Update</button>
+    <button id="item_saveBtn" type="button" class="btn btn-info">Save</button>
+    <button id="item_resetBtn" type="button" class="btn btn-info">Reset</button>
+
+
+
+
+
+    <table id="table2" class="table">
+        <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Code</th>
+            <th scope="col">Description</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+        </tr>
+        </thead>
+        <tbody id="tbody2">
+        <tr>
+            <th scope="row">1</th>
+            <td>i001</td>
+            <td>pen</td>
+            <td>500</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>i002</td>
+            <td>pencil</td>
+            <td>100</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>i003</td>
+            <td>book</td>
+            <td>1000</td>
+            <td>420</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="order">
+    <div id="divOrder"></div>
+    <h3 id="orders">Place Order</h3>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="imgOrder" src="assets/img/icons8-order-100.png" alt="Bootstrap" width="20" height="24">
+            </a>
+        </div>
+    </nav>
+    <div id="orderDiv1"></div>
+    <div id="orderDiv2"></div>
+    <div id="orderDiv3"></div>
+    <div id="orderDiv4"></div>
+    <div id="orderDiv5"></div>
+    <h3 id="invoice">Invoice Details</h3>
+    <h3 id="invoice1">Select Item</h3>
+    <div id="or1" class="input-group flex-nowrap">
+        <span class="span">Order ID :-</span><br>
+        <input type="text" class="form-control" placeholder="o" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or2" class="input-group flex-nowrap">
+        <span class="span">Date :-</span><br>
+        <input type="text" class="form-control" placeholder="DD/MM/YYYY" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or3" class="input-group flex-nowrap">
+        <span class="span">Customer ID :-</span><br>
+        <input type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or4" class="input-group flex-nowrap">
+        <span class="span">Customer Name :-</span><br>
+        <input type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or5" class="input-group flex-nowrap">
+        <span class="span">Address :-</span><br>
+        <input type="text" class="form-control" placeholder="Panadura" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or6" class="input-group flex-nowrap">
+        <span class="span">Contact :-</span><br>
+        <input type="text" class="form-control" placeholder="xx xxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button id="viewBtn" class="btn btn-primary" type="button">View Order Details</button>
+    </div>
+
+    <div id="or7" class="input-group flex-nowrap">
+        <span class="span">Item Code :-</span><br>
+        <input type="text" class="form-control" placeholder="P001" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or8" class="input-group flex-nowrap">
+        <span class="span">Item Name :-</span><br>
+        <input type="text" class="form-control" placeholder="Pen" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or9" class="input-group flex-nowrap">
+        <span class="span">Qty On Hand :-</span><br>
+        <input type="text" class="form-control" placeholder="12" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or10" class="input-group flex-nowrap">
+        <span class="span">Order Quantity :-</span><br>
+        <input type="text" class="form-control" placeholder="5" aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or11" class="input-group flex-nowrap">
+        <span class="span">Price :-</span><br>
+        <input type="text" class="form-control" placeholder="1000.00" aria-label="Username"  aria-describedby="addon-wrapping">
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button id="addBtn" class="btn btn-primary" type="button">Add Item</button>
+    </div>
+
+    <div id="or12" class="input-group flex-nowrap">
+        <span class="span">Cash :-</span><br>
+        <input type="text" class="form-control" placeholder="5000.00" aria-label="Username"  aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or13" class="input-group flex-nowrap">
+        <span class="span">Discount :-</span><br>
+        <input type="text" class="form-control" placeholder="10" aria-label="Username"  aria-describedby="addon-wrapping">
+    </div>
+
+    <div id="or14" class="input-group flex-nowrap">
+        <span class="span">Balance :-</span><br>
+        <input type="text" class="form-control" placeholder="500.00" aria-label="Username"  aria-describedby="addon-wrapping">
+    </div>
+
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button id="purchase" class="btn btn-primary" type="button">Purchase</button>
+    </div>
+
+    <table id="table3" class="table">
+        <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Code</th>
+            <th scope="col">Description</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody id="tbody3">
+        <tr>
+            <th scope="row">1</th>
+            <td>o001</td>
+            <td>Book</td>
+            <td>20</td>
+            <td>10 000</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>o002</td>
+            <td>Pen</td>
+            <td>50</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>o003</td>
+            <td>Pencil</td>
+            <td>50</td>
+            <td>3000</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="order_details">
+    <div id="divDetails"></div>
+    <h3 id="Details">Order Details</h3>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="imgDetails" src="assets/img/icons8-order-100.png" alt="Bootstrap" width="20" height="24">
+            </a>
+        </div>
+    </nav>
+    <nav id="search" class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+                <input id="searchbar" class="form-control me-2" type="search" placeholder="Search Order ID" aria-label="Search">
+                <button id="btnSearch" class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <table  class="table4">
+        <thead>
+        <tr>
+            <th scope="col">No</th>
+            <th scope="col">Order ID</th>
+            <th scope="col">Order Date</th>
+            <th scope="col">Item Code</th>
+            <th scope="col">Customer ID</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+            <th scope="col">Discount</th>
+            <th scope="col">Sub Total</th>
+        </tr>
+        </thead>
+        <tbody id="tbody4">
+        <tr>
+            <th scope="row">1</th>
+            <td>o001</td>
+            <td>09/10/2023</td>
+            <td>i001</td>
+            <td>c001</td>
+            <td>15</td>
+            <td>200.00</td>
+            <td>50</td>
+            <td>150.00</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>o002</td>
+            <td>09/10/2023</td>
+            <td>i003</td>
+            <td>c005</td>
+            <td>20</td>
+            <td>300.00</td>
+            <td>50</td>
+            <td>250.00</td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>o003</td>
+            <td>09/10/2023</td>
+            <td>i001</td>
+            <td>c002</td>
+            <td>25</td>
+            <td>500.00</td>
+            <td>100</td>
+            <td>400.00</td>
+        </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>o004</td>
+            <td>09/10/2023</td>
+            <td>i004</td>
+            <td>c003</td>
+            <td>25</td>
+            <td>1000.00</td>
+            <td>100</td>
+            <td>900.00</td>
+        </tr>
+        <tr>
+            <th scope="row">5</th>
+            <td>o005</td>
+            <td>09/10/2023</td>
+            <td>i002</td>
+            <td>c001</td>
+            <td>50</td>
+            <td>5000.00</td>
+            <td>200</td>
+            <td>4800.00</td>
+        </tr>
+        <tr>
+            <th scope="row">6</th>
+            <td>o006</td>
+            <td>09/10/2023</td>
+            <td>i003</td>
+            <td>c001</td>
+            <td>50</td>
+            <td>4000.00</td>
+            <td>300</td>
+            <td>3700.00</td>
+        </tr>
+        <tr>
+            <th scope="row">7</th>
+            <td>o007</td>
+            <td>09/10/2023</td>
+            <td>i001</td>
+            <td>c002</td>
+            <td>50</td>
+            <td>4000.00</td>
+            <td>100</td>
+            <td>3900.00</td>
+        </tr>
+        <tr>
+            <th scope="row">8</th>
+            <td>o008</td>
+            <td>09/10/2023</td>
+            <td>i002</td>
+            <td>c003</td>
+            <td>50</td>
+            <td>4000.00</td>
+            <td>100</td>
+            <td>3900.00</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<!--<h3></h3>-->
+
+<script src="assets/lib/jquery_min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
