@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment 07</title>
+    <title>Assignment 11</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
@@ -100,28 +100,30 @@
     <div id="cusSearch"></div>
     <div id="cu1" class="input-group flex-nowrap">
         <span class="span">Customer ID :-</span>
-        <input id="cuS1" type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
+        <input id="customer_id" type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="cu2" class="input-group flex-nowrap">
         <span class="span">Customer Name :-</span><br>
-        <input id="cuS2" type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
+        <input id="customer_name" type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="cu3" class="input-group flex-nowrap">
         <span class="span">Contact :-</span><br>
-        <input id="cuS3" type="text" class="form-control" placeholder="xx xxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
+        <input id="contact" type="text" class="form-control" placeholder="xx xxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="cu4" class="input-group flex-nowrap">
         <span class="span">Address :-</span><br>
-        <input id="cuS4" type="text" class="form-control" placeholder="Panadura" aria-label="Username" aria-describedby="addon-wrapping">
+        <input id="address" type="text" class="form-control" placeholder="Panadura" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
-    <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
-    <button id="UpdateBtn" type="button" class="btn btn-primary">Update</button>
-    <button id="saveBtn" type="button" class="btn btn-info">Save</button>
-    <button id="resetBtn" type="button" class="btn btn-info">Reset</button>
+    <div id="customer_btn" class="mt-5">
+        <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
+        <button id="UpdateBtn" type="button" class="btn btn-primary">Update</button>
+        <button id="saveBtn" type="button" class="btn btn-info">Save</button>
+        <button id="resetBtn" type="button" class="btn btn-info">Reset</button>
+    </div>
 
 
     <table id="table" class="table">
@@ -135,13 +137,7 @@
         </tr>
         </thead>
         <tbody id="tbody">
-        <tr>
-            <th scope="row">1</th>
-            <td>c001</td>
-            <td>Thashi</td>
-            <td>Panadura</td>
-            <td>0757206813</td>
-        </tr>
+
         <tr>
             <th scope="row">2</th>
             <td>c002</td>
@@ -250,27 +246,39 @@
     <div id="orderDiv2"></div>
     <div id="orderDiv3"></div>
     <div id="orderDiv4"></div>
-    <div id="orderDiv5"></div>
+    <div id="orderDiv5">
+        <div class="net_total">
+            <span>Net Total : </span>
+            <span>0/=</span>
+        </div>
+        <div class="sub_total">
+            <span>Sub Total : </span>
+            <span>0/=</span>
+        </div>
+    </div>
     <h3 id="invoice">Invoice Details</h3>
     <h3 id="invoice1">Select Item</h3>
     <div id="or1" class="input-group flex-nowrap">
         <span class="span">Order ID :-</span><br>
-        <input type="text" class="form-control" placeholder="o" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" class="form-control" placeholder="o" aria-label="Username" aria-describedby="addon-wrapping" id="order_Id">
     </div>
 
     <div id="or2" class="input-group flex-nowrap">
         <span class="span">Date :-</span><br>
-        <input type="text" class="form-control" placeholder="DD/MM/YYYY" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" id="orderDate" class="form-control" placeholder="DD/MM/YYYY" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="or3" class="input-group flex-nowrap">
         <span class="span">Customer ID :-</span><br>
-        <input type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
+<!--        <input type="text" id="custId" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">-->
+        <select class="form-select" aria-label="Default select example" id="custId">
+            <option selected>select the customer</option>
+        </select>
     </div>
 
     <div id="or4" class="input-group flex-nowrap">
         <span class="span">Customer Name :-</span><br>
-        <input type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" id="custName" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="or5" class="input-group flex-nowrap">
@@ -289,27 +297,30 @@
 
     <div id="or7" class="input-group flex-nowrap">
         <span class="span">Item Code :-</span><br>
-        <input type="text" class="form-control" placeholder="P001" aria-label="Username" aria-describedby="addon-wrapping">
+<!--        <input type="text"  id="item_Id" class="form-control" placeholder="P001" aria-label="Username" aria-describedby="addon-wrapping">-->
+        <select class="form-select" aria-label="Default select example" id="item_Id">
+            <option selected>select the item</option>
+        </select>
     </div>
 
     <div id="or8" class="input-group flex-nowrap">
         <span class="span">Item Name :-</span><br>
-        <input type="text" class="form-control" placeholder="Pen" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" id="desc" class="form-control" placeholder="Pen" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="or9" class="input-group flex-nowrap">
         <span class="span">Qty On Hand :-</span><br>
-        <input type="text" class="form-control" placeholder="12" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" id="qtyOnHand" class="form-control" placeholder="12" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="or10" class="input-group flex-nowrap">
         <span class="span">Order Quantity :-</span><br>
-        <input type="text" class="form-control" placeholder="5" aria-label="Username" aria-describedby="addon-wrapping">
+        <input type="text" id="order_quantity" class="form-control" placeholder="5" aria-label="Username" aria-describedby="addon-wrapping">
     </div>
 
     <div id="or11" class="input-group flex-nowrap">
         <span class="span">Price :-</span><br>
-        <input type="text" class="form-control" placeholder="1000.00" aria-label="Username"  aria-describedby="addon-wrapping">
+        <input type="text" id="unit_price" class="form-control" placeholder="1000.00" aria-label="Username"  aria-describedby="addon-wrapping">
     </div>
 
     <div class="d-grid gap-2 col-6 mx-auto">
@@ -318,17 +329,17 @@
 
     <div id="or12" class="input-group flex-nowrap">
         <span class="span">Cash :-</span><br>
-        <input type="text" class="form-control" placeholder="5000.00" aria-label="Username"  aria-describedby="addon-wrapping">
+        <input type="text" id="cash" class="form-control" placeholder="5000.00" aria-label="Username"  aria-describedby="addon-wrapping">
     </div>
 
     <div id="or13" class="input-group flex-nowrap">
         <span class="span">Discount :-</span><br>
-        <input type="text" class="form-control" placeholder="10" aria-label="Username"  aria-describedby="addon-wrapping">
+        <input type="text" id="discount" class="form-control" placeholder="10" aria-label="Username"  aria-describedby="addon-wrapping">
     </div>
 
     <div id="or14" class="input-group flex-nowrap">
         <span class="span">Balance :-</span><br>
-        <input type="text" class="form-control" placeholder="500.00" aria-label="Username"  aria-describedby="addon-wrapping">
+        <input type="text" id="balance" class="form-control" placeholder="500.00" aria-label="Username"  aria-describedby="addon-wrapping">
     </div>
 
     <div class="d-grid gap-2 col-6 mx-auto">
@@ -340,7 +351,7 @@
         <tr>
             <th scope="col">No</th>
             <th scope="col">Code</th>
-            <th scope="col">Description</th>
+            <th scope="col">Unit Price</th>
             <th scope="col">Qty</th>
             <th scope="col">Total</th>
         </tr>
@@ -396,10 +407,7 @@
             <th scope="col">No</th>
             <th scope="col">Order ID</th>
             <th scope="col">Order Date</th>
-            <th scope="col">Item Code</th>
             <th scope="col">Customer ID</th>
-            <th scope="col">Qty</th>
-            <th scope="col">Price</th>
             <th scope="col">Discount</th>
             <th scope="col">Sub Total</th>
         </tr>
@@ -501,5 +509,13 @@
 
 <script src="assets/lib/jquery_min.js"></script>
 <script src="assets/js/script.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.32/dist/sweetalert2.all.min.js"></script>
+<script type="module" src="controller/indexController.js"></script>
+<script type="module" src="controller/customerController.js"></script>
+<script type="module" src="controller/itemController.js"></script>
+<script type="module" src="controller/orderController.js"></script>
+<script type="module" src="controller/orderDetailsController.js"></script>
 </body>
 </html>

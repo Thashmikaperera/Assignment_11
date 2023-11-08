@@ -422,7 +422,7 @@ body>header>#div1{
     font-size: 30px;
 }
 
-#cuS1{
+#customer_id{
     width: 200px;
     height: 30px;
     position: absolute;
@@ -438,7 +438,7 @@ body>header>#div1{
     font-size: 22px;
 }
 
-#cuS2{
+#customer_name{
     width: 200px;
     height: 30px;
     position: absolute;
@@ -454,7 +454,7 @@ body>header>#div1{
     font-size: 22px;
 }
 
-#cuS3{
+#contact{
     width: 200px;
     height: 30px;
     position: absolute;
@@ -470,7 +470,7 @@ body>header>#div1{
     font-size: 22px;
 }
 
-#cuS4{
+#address{
     width: 200px;
     height: 30px;
     position: absolute;
@@ -792,9 +792,9 @@ body>header>#div1{
     left: 4%;
 }
 
-#or3>input{
+#or3>select {
     width: 150px;
-    height: 22px;
+    /*height: 22px;*/
     position: absolute;
     left: 1%;
     top: 110%;
@@ -880,9 +880,9 @@ body>header>#div1{
     left: 36%;
 }
 
-#or7>input{
+#or7>select{
     width: 150px;
-    height: 22px;
+    /*height: 22px;*/
     position: absolute;
     left: 1%;
     top: 110%;
